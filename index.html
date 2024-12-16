@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jarvis - Voice Assistant</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body & Global Fonts */
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Main Container */
+      .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        width: 100%;
+        color: #333;
+      }
+
+      /* Title */
+      h1 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 1.8em;
+      }
+
+      /* Buttons */
+      button {
+        background: #2575fc;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.2s ease;
+        margin: 10px;
+      }
+
+      button:hover {
+        background: #6a11cb;
+        transform: translateY(-2px);
+      }
+
+      /* Response Text */
+      #response {
+        margin: 20px 0;
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      /* Add responsiveness for mobile devices */
+      @media (max-width: 600px) {
+        button {
+          padding: 8px 16px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🖖 Jarvis - Voice Assistant</h1>
+      <p id="response">Press "Start Listening" and say "Jarvis" to activate.</p>
+      <button onclick="startListening()">Start Listening</button>
+      <button onclick="stopListening()">Stop Listening</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
